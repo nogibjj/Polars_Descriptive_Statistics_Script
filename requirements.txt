@@ -1,19 +1,17 @@
+# Core libraries
+polars
+numpy
+matplotlib
+seaborn
 
+#devops
 black #==22.3.0
 click #==8.1.3
 pytest #==7.4.0
 pytest-cov #==4.0.0
-#pylint #==2.15.3
+pylint #==2.15.3
+boto3 #==1.24.87
 
-#to run the analysis 
-pandas #==2.2.2
-matplotlib #==3.9.2
-numpy #==2.1.1
-polars #==1.7.1
-
-#to lint with ruff and test with nbval plugin
-nbval #==0.10.0  
-ruff #==0.0.284
-
-
- 
+#web
+fastapi #==0.85.0
+uvicorn #==0.18.3
