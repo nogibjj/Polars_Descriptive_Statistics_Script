@@ -1,13 +1,8 @@
 [![Install](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml)
 
-# 706_DE_Individual_Project
-
-# Yirang_Liu_Polars_Descriptive_Statistics_Script 
+# 706_DE_Yirang_Liu_Polars_Descriptive_Statistics_Script 
 
 # Structure for this project 
-
-This project serves as an introduction to polars, this project is a recreation of my [Individual Project 1](https://github.com/nogibjj/Meron_Gedrago_individual1) with polars. Similarly to the individual project, we use polars to read and describe the data, as well as use matplotlib to visualize the data. Find below the structure of the project
-
 ```
 ├── .devcontainer/
 │   ├── devcontainer.json
