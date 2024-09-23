@@ -1,3 +1,5 @@
+[![Install](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml)
+
 # 706_DE_Individual_Project
 
 # Yirang_Liu_Polars_Descriptive_Statistics_Script 
@@ -19,15 +21,14 @@ This project serves as an introduction to polars, this project is a recreation o
 ├── mylib/
 │   └── lib.py
 ├── .gitignore
-├── Requirements.txt
+├── Histogram.png
 ├── Makefile
+├── PolarOutput.png
 ├── README.md
-├── main.py
-├── main.ipynb
-├── Data_visual.png
-├── test.csv
-├── test_lib.csv
-└── test_main.py
+├── ScatteredPlot.png
+├── hello.py
+├── Requirements.txt
+└── test_hello.py
 
 ```
 
