@@ -1,33 +1,49 @@
-# import necessary packages
-import polars as pl
+"""
+    library file
+"""
+
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+dataset = "women-stem.csv"
 
 
-# create a function to read the dataset and filter the
-def load_dataset(dataset):
-    return pl.read_csv(dataset)
+def load_dataset():
+    """load a dataset from input"""
+    df = pd.read_csv(dataset)
+    return df
 
 
-# calculate and print the summary statistics
-def describe_data(input_data):
-    std = round(input_data.std().item(), 2)
-    median = round(input_data.median().item(), 2)
-    mean = round(input_data.mean().item(), 2)
-    return f"The mean is {mean}; the median is {median}; the sd is {std}"
+def get_mean(df, col):
+    """calculate the mean of selected column from dataframe"""
+    return df[col].mean()
 
 
-# create a function to get the median of the data
-def find_min_and_max(input_data):
-    data_max = input_data.max()
-    data_min = input_data.min()
-    return f"The max is {data_max.item()} and the min is {data_min.item()}"
+def get_median(df, col):
+    """calculate the median of selected column from dataframe"""
+    return df[col].median()
 
 
-def create_graph(input_data):
-    # Create visualization
-    plt.scatter(input_data.select(["YEAR"]), input_data.select(["ESTIMATE"]))
-    plt.xlabel("Year")
-    plt.ylabel("Deaths per 100,000 resident population")
-    plt.title("Death rates from overdose over year")
-    plt.xticks(range(int(input_data["YEAR"].min()), int(input_data["YEAR"].max()), 2))
+def get_std(df, col):
+    """calculate the standard deviation of selected column from dataframe"""
+    return df[col].std()
+
+
+def plot_histogram(df, col):
+    """plot histogram plot of selected column from import dataframe"""
+    plt.figure(figsize=(12, 8))
+    sns.histplot(df[col].dropna(), bins=30, kde=True)
+    plt.title("Histogram of " + col)
+    plt.xlabel(col)
+    plt.ylabel("Population")
+    plt.show()
+
+
+def plot_scatter(data, x_col, y_col):
+    """plot scatter plot of selected column from import dataframe"""
+    data.plot.scatter(x=x_col, y=y_col)
+    plt.title(x_col + " vs. " + y_col)
+    plt.xlabel(x_col)
+    plt.ylabel(y_col)
     plt.show()
