@@ -1,5 +1,7 @@
 [![Install](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml)
-[![Install](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/install.yml)
+[![Lint](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/lint.yml)
+[![Format](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/format.yml)
+[![Test](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Yirang_Liu_Polars_Descriptive_Statistics_Script/actions/workflows/test.yml)
 
 # 706_DE_Yirang_Liu_Polars_Descriptive_Statistics_Script 
 
