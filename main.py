@@ -12,7 +12,7 @@ def readcsv(filename):
 def get_summary_stats(dataset, col_of_intrst):
     summ_stats = dataset[col_of_intrst].describe()
 
-    # Use filter to get the specific rows for mean, median, and standard deviations
+    # Use filter to get the specific rows for mean, median, and standard deviation
     mean = summ_stats.filter(summ_stats["statistic"] == "mean")["value"][0]
     median = summ_stats.filter(summ_stats["statistic"] == "50%")["value"][
         0
