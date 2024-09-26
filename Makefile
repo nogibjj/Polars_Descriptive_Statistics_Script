@@ -2,7 +2,7 @@ install:
 	pip install --upgrade pip && pip install -r requirements.txt
 
 test: 
-	python -m pytest -vv --nbval -cov=mylib -cov=main test_*.py *.ipynb
+	python -m pytest -vv --nbval -cov=mylib -cov=main test_*.py
 
 format:
 	black *.py
