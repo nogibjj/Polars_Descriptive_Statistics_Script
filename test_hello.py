@@ -6,7 +6,7 @@ from pytest import approx
 
 def test_get_summary_stats():
     summary_stats = get_summary_stats(
-        pl.read_csv("StudentPerformanceFactors.csv"), "Exam_Score"
+        pl.read_csv("StudentPerformance.csv"), "Exam_Score"
     )
     mean = summary_stats.filter(summary_stats["statistic"] == "mean")["value"][0]
     median = summary_stats.filter(summary_stats["statistic"] == "50%")["value"][0]
